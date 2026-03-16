@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Web Scraper",
+  "version": "1.1.0",
+  "description": "Scrape product data from Amazon, Flipkart, Myntra, Meesho & Snapdeal. Export to CSV or send to backend.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://*.amazon.com/*",
+    "https://*.amazon.in/*",
+    "https://*.amazon.co.uk/*",
+    "https://*.amazon.ca/*",
+    "https://*.amazon.de/*",
+    "https://*.amazon.fr/*",
+    "https://*.amazon.it/*",
+    "https://*.amazon.es/*",
+    "https://*.amazon.co.jp/*",
+    "https://*.amazon.com.au/*",
+    "https://www.flipkart.com/*",
+    "https://www.myntra.com/*",
+    "https://www.meesho.com/*",
+    "https://www.snapdeal.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.in/*",
+        "https://www.amazon.com/*",
+        "https://www.flipkart.com/*",
+        "https://www.myntra.com/*",
+        "https://www.meesho.com/*",
+        "https://www.snapdeal.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
