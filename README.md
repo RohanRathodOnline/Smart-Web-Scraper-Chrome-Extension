@@ -17,7 +17,6 @@ Designed for quick product research, price comparison, and data collection direc
 
 ### Extension Interface
 
-<img width="755" height="1192" alt="Screenshot 2026-03-16 193924" src="https://github.com/user-attachments/assets/33d36d97-5dfc-44eb-83d3-da41a0d58330" />
 <img width="2879" height="1541" alt="Screenshot 2026-03-16 193939" src="https://github.com/user-attachments/assets/704e09a0-ca5f-4da2-9c2f-753218556d9a" />
 
 ---
