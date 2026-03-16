@@ -126,8 +126,4 @@ smart-scraper
 
 Rohan Rathod
 
-GitHub:  
-https://github.com/YOUR_USERNAME
----
-GitHub:
-https://github.com/YOUR_USERNAME
+Linkedin : https://www.linkedin.com/in/rohanrathodofficial
